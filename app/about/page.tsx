@@ -1,7 +1,7 @@
-export default function Home() {
+export default function About() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <p>Home Page</p>
+      <p>About Page</p>
     </div>
   );
 }
