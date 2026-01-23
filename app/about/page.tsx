@@ -1,3 +1,5 @@
+"use client";
+
 import { Camera, Award, Users, Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -161,12 +163,12 @@ export default function About() {
             Ready to start your photography journey with us? Get in touch to
             discuss your project.
           </p>
-          <Link
-            href="/contact"
-            className="text-md text-white hover:text-gray-600 transition-colors"
+          <button
+            onClick={() => (window.location.href = "/contact")}
+            className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-400 transition-colors mb-6 cursor-pointer"
           >
-            Contact
-          </Link>
+            Contact Us
+          </button>
         </div>
       </section>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Camera, Award, Users, Heart, Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 function Footer() {
   return (

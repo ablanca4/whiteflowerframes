@@ -1,5 +1,7 @@
+import { Ham } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import Hamburger from "./Hamburger";
 
 export function Header() {
   return (
@@ -9,6 +11,7 @@ export function Header() {
           <Link href="/" className="tracking-tight text-2xl text-black">
             <h1>Whiteflower Frames</h1>
           </Link>
+          <Hamburger />
           <nav className="hidden md:flex items-center gap-6">
             <Link
               href="/galleries"
