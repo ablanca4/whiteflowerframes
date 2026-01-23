@@ -1,4 +1,4 @@
-import { Camera, Award, Users, Heart } from "lucide-react";
+import { Camera, Award, Users, Heart, Link } from "lucide-react";
 import Image from "next/image";
 
 export default function About() {
@@ -149,23 +149,6 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Contact CTA */}
-      <section className="py-20 px-6 bg-black text-white">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="mb-4">Let&apos;s Create Together</h2>
-          <p className="text-white/80 mb-8 text-lg">
-            Ready to start your photography journey with us? Get in touch to
-            discuss your project.
-          </p>
-          <a
-            href="mailto:hello@aperture.com"
-            className="inline-block px-8 py-3 bg-white text-black hover:bg-gray-100 transition-colors rounded"
-          >
-            Contact Us
-          </a>
         </div>
       </section>
     </div>

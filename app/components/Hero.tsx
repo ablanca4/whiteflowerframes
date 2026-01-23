@@ -5,7 +5,7 @@ export function Hero() {
     <section className="relative h-screen w-full">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1662550112953-dc8cb4cdb70b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYW5kc2NhcGUlMjBtb3VudGFpbiUyMHBob3RvZ3JhcGh5fGVufDF8fHx8MTc2ODM5MTgzOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src={"/images/backsplash.jpg"}
           alt="Hero landscape"
           fill={true}
           className="w-full h-full object-cover"
