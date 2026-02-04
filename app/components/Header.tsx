@@ -1,7 +1,7 @@
-import { Ham } from "lucide-react";
 import Link from "next/link";
-import React from "react";
-import Hamburger from "./Hamburger";
+import ToggleSection from "./ToggleSection";
+import HeaderItems from "./HeaderItems";
+import HeaderMenuItems from "./HeaderMenuItems";
 
 export function Header() {
   return (
@@ -11,26 +11,11 @@ export function Header() {
           <Link href="/" className="tracking-tight text-2xl text-black">
             <h1>Whiteflower Frames</h1>
           </Link>
-          <Hamburger />
+          <ToggleSection title="Menu">
+            <HeaderMenuItems />
+          </ToggleSection>
           <nav className="hidden md:flex items-center gap-6">
-            <Link
-              href="/galleries"
-              className="text-md  text-black hover:text-gray-600 transition-colors"
-            >
-              Collections
-            </Link>
-            <Link
-              href="/about"
-              className="text-md text-black hover:text-gray-600 transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="text-md text-black hover:text-gray-600 transition-colors"
-            >
-              Contact
-            </Link>
+            <HeaderItems />
           </nav>
         </div>
       </div>
