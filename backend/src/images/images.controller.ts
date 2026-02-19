@@ -1,7 +1,7 @@
 import { Controller, Get, Post } from '@nestjs/common';
 
-@Controller('image')
-export class ImageController {
+@Controller('images')
+export class ImagesController {
   @Post()
   create(): string {
     return 'this uploads a new image';
