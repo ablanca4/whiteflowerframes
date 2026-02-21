@@ -5,6 +5,7 @@ import { ImagesModule } from './images/images.module';
 import { UsersModule } from './users/users.module';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { Users } from './users/user.entity';
+import { AuthModule } from './auth/auth.module';
 import 'dotenv/config';
 
 const postGresConnectionOptions: TypeOrmModuleOptions = {
@@ -22,6 +23,7 @@ const postGresConnectionOptions: TypeOrmModuleOptions = {
     TypeOrmModule.forRoot(postGresConnectionOptions),
     ImagesModule,
     UsersModule,
+    AuthModule,
   ],
   controllers: [ImagesController],
   providers: [ImagesService],
