@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import HamburgerMenu from "./Hamburger";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function ToggleSection({
   children,
@@ -15,20 +15,19 @@ export default function ToggleSection({
   };
 
   return (
-    <>
-      {/* Header / Trigger Area */}
+    <div className="relative">
       <div
         className="flex justify-between items-center cursor-pointer select-none"
         onClick={toggleVisibility}
       >
         <HamburgerMenu />
-        {/* Conditionally Rendered Content */}
-        {isVisible && (
-          <div className="absolute md:hidden mt-30 p-5 pb-0 pt-0 bg-white/80 animate-in fade-in slide-in-from-top-1 duration-200">
-            {children}
-          </div>
-        )}
       </div>
-    </>
+      {/* Conditionally Rendered Content */}
+      {isVisible && (
+        <div className="absolute right-0 top-full mt-4 min-w-[200px] p-5 bg-white/95 backdrop-blur-md shadow-lg rounded-xl border border-gray-100 animate-in fade-in slide-in-from-top-2 duration-200 z-50 flex flex-col gap-4">
+          {children}
+        </div>
+      )}
+    </div>
   );
 }

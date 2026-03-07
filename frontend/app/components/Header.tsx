@@ -10,12 +10,14 @@ export function Header() {
           <Link href="/" className="tracking-tight text-2xl text-black">
             <h1>Whiteflower Frames</h1>
           </Link>
-          <ToggleSection title="Menu">
-            <HeaderMenuItems />
-          </ToggleSection>
           <nav className="hidden md:flex items-center gap-6">
             <HeaderItems />
           </nav>
+        </div>
+        <div className="md:hidden flex items-center">
+          <ToggleSection title="Menu">
+            <HeaderMenuItems />
+          </ToggleSection>
         </div>
       </div>
     </header>
