@@ -3,11 +3,11 @@ import React from "react";
 
 function HeaderMenuItems() {
   return (
-    <div className="grid-cols-1 gap-4">
+    <div className="flex flex-col gap-6">
       <div>
         <Link
           href="/galleries"
-          className="text-md  text-black hover:text-gray-600 transition-colors"
+          className="block text-xl font-medium text-black hover:text-gray-600 transition-colors"
         >
           Collections
         </Link>
@@ -15,7 +15,7 @@ function HeaderMenuItems() {
       <div>
         <Link
           href="/about"
-          className="text-md text-black hover:text-gray-600 transition-colors"
+          className="block text-xl font-medium text-black hover:text-gray-600 transition-colors"
         >
           About
         </Link>
@@ -23,7 +23,7 @@ function HeaderMenuItems() {
       <div>
         <Link
           href="/contact"
-          className="text-md text-black hover:text-gray-600 transition-colors"
+          className="block text-xl font-medium text-black hover:text-gray-600 transition-colors"
         >
           Contact
         </Link>
